@@ -27,7 +27,9 @@ app.get('/:color', function (req, res) {
     `)
 })
 
-
+app.post('/:color', (req, res) => {
+    res.send('Hello world')
+})
 
 app.listen(process.env.PORT, function(){
     console.log('I am Awake')
